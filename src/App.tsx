@@ -8,7 +8,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(" https://week-13-offline.kirattechnologies.workers.dev/api/v1/user/details")
+    axios.get("https://week-13-offline.kirattechnologies.workers.dev/api/v1/user/details")
     .then(response=>{
       setUserData(response.data);
       setIsLoading(false);
